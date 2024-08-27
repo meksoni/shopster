@@ -27,10 +27,25 @@ Features:
     - Overview by month, day, and top products.
     - Visitor statistics, including data on countries of origin.
 
+## Where u can find a Demo for this Project
+
+**[Shopster](https://shopster.neodigital.pro)**.
+
+**[Shopster Dashboard](https://shopster.neodigital.pro/admin)**
+SuperAdmin:
+- Email: superadmin@demo.com
+- Password: shopster
+
+Admin:
+- Email: admin@demo.com
+- Password: shopster
 
 ## Where this project is used
 
 This project was used for a company I worked for, they asked me to create a web store for their business.
+
 Here is the link of the actual and live website:
 **[eCommerce AlfaSoft](https://shop.alfasoft.rs/)**.
 - It's still in progress, I'm working on the frontend and on styling the entire website
+
+
