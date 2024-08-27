@@ -27,6 +27,9 @@ Features:
     - Overview by month, day, and top products.
     - Visitor statistics, including data on countries of origin.
 
+And I plan to put a lot more into this project.
+Stay tuned :grinning:
+
 ## Where u can find a Demo for this Project
 
 **[Shopster](https://shopster.neodigital.pro)**.
