@@ -22,7 +22,15 @@ Features:
 - IPS QR Code: Implementation of IPS QR code for payment via bank transfer.
 - Real-time Notifications: System for notifying users in real time.
 - Users: Management of users and their access rights.
+- Report a problem.
 - Statistics:
     - Overview by month, day, and top products.
     - Visitor statistics, including data on countries of origin.
 
+
+## Where this project is used
+
+This project was used for a company I worked for, they asked me to create a web store for their business.
+Here is the link of the actual and live website:
+**[eCommerce AlfaSoft](https://shop.alfasoft.rs/)**.
+- It's still in progress, I'm working on the frontend and on styling the entire website
