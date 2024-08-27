@@ -1,6 +1,5 @@
 @extends('admin.layouts.app')
 
-@section('title', 'AlfaSoft | PodKategorije')
 
 @section('content')
 

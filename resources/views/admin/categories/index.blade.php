@@ -1,6 +1,5 @@
 @extends('admin.layouts.app')
 
-@section('title', 'AlfaSoft | Kategorije')
 
 @section('content')
 <div class="container-fluid px-4">

@@ -4,7 +4,7 @@
      <div class="container position-relative">
          <a class="navbar-brand text-dark fw-semibold" href="{{ route('shop.homepage') }}">
              {{-- <img src="{{ asset('storage/logo/alfasoft-black.png') }}" class="img-fluid w-50" alt=""> --}}
-             <span class="text-primary">AlfaSoft</span> Shop
+             <span class="text-primary">{{$store->cp_name}}</span>
          </a>
         <div class="d-flex align-items-center navbar-no-collapse-items navbar-nav flex-row order-md-last">
              <button class="navbar-toggler text-dark order-last" type="button" data-bs-toggle="offcanvas"
@@ -104,7 +104,7 @@
 
 <div class="offcanvas bg-light offcanvas-start " tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasCart">
     <div class="border-bottom border-gray offcanvas-header align-items-center justify-content-between">
-        <h5 class="mb-0 text-dark fw-semibold"><span class="text-primary">AlfaSoft</span> Shop</h5>
+        <h5 class="mb-0 text-dark fw-semibold"><span class="text-primary">{{$store->cp_name}}</span></h5>
         <button type="button"
         class="btn btn-secondary p-0 m-0 width-3x height-3x flex-center ms-auto"
         data-bs-dismiss="offcanvas" aria-label="Close">

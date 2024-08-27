@@ -1,7 +1,5 @@
 @extends('admin.layouts.app')
 
-@section('title', 'AlfaSoft Hub | Create Product')
-
 
 
 @section('content')

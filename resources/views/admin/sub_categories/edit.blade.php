@@ -1,5 +1,4 @@
 @extends('admin.layouts.app')
-@section('title', 'AlfaSoft Hub | Sub Category Create')
 
 
 @section('content')

@@ -1,7 +1,5 @@
 @extends('admin.layouts.app')
 
-@section('title', 'AlfaSoft | Podešavanje prodavnice')
-
 @section('content')
 <div class="container-fluid px-4">
 @include('admin.components.messages')  

@@ -96,7 +96,7 @@ function orderEmail($orderId) {
     try {
         Mail::to($email)
             ->send(new OrderEmail([
-                'subject' => 'AlfaSoft Online Prodavnica | Porudžbina: #' . $orderId,
+                'subject' => 'Shopster | Porudžbina: #' . $orderId,
                 'order' => $order,
                 'qrCode' => $qrCode,
             ], $attachFile));
