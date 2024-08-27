@@ -31,7 +31,8 @@ Features:
 
 **[Shopster](https://shopster.neodigital.pro)**.
 
-**[Shopster Dashboard](https://shopster.neodigital.pro/admin)**
+**[Shopster Dashboard](https://shopster.neodigital.pro/admin)**.
+
 SuperAdmin:
 - Email: superadmin@demo.com
 - Password: shopster
