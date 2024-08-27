@@ -1,0 +1,46 @@
+@import "bootstrap/scss/functions";
+@import "./custom/variables/variables";
+@import "./custom/variables/variables-dark";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+@import "./custom/utilities/utilities";
+
+@import "bootstrap/scss/bootstrap.scss";
+
+//Custom css variables for Assan Theme
+@import "./custom/utilities/root";
+
+//Theme core style import
+
+@import "./custom/utilities/typography";
+@import "./custom/utilities/flexbox";
+@import "./custom/components/components";
+@import "./custom/webfonts/webfonts";
+
+//Custom imports
+
+//material symbols
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0");
+//bootstrap icons
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+//Custom font - Kanit Font
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+//Dropzone
+@import "dropzone/dist/dropzone.css";
+
+//Choices
+@import "choices.js/public/assets/styles/choices.min.css";
+//Custom body background css here to avoid conflict with dropdown, forms, cards background colors
+body {
+    background-color: var(--#{$prefix}gray-100);
+}
+[data-bs-theme="dark"] {
+    body {
+        background-color: var(--#{$prefix}black);
+    }
+}

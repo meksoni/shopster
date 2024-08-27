@@ -1,0 +1,135 @@
+// NOTIFIKACIJE POJEDINACNO OZNACAVANJE AS READ ( ZA KASNIJE )
+//     const notificationsIndexUrl = '{{ route("notifications.index") }}';
+//     const markAsReadUrl = function(notificationId) {
+//         return '{{ route("notifications.markAsRead", ":id") }}'.replace(':id', notificationId);
+//     };
+
+//     document.addEventListener("DOMContentLoaded", function() {
+//     
+//     $.ajax({
+//         url: notificationsIndexUrl,
+//         method: 'GET',
+//         dataType: 'json',
+//         success: function(data) {
+//             const notificationList = $('#notificationList');
+//             const notificationIndicator = $('#notificationIndicator');
+//             notificationList.empty(); // Očisti prethodne notifikacije
+
+//             let hasUnread = false;
+
+//             // Dodaj svaku notifikaciju u listu
+//             data.forEach(notification => {
+//                 const listItem = $(`
+//                     <a href="#" class="list-group-item list-group-item-action py-3 px-4 d-flex align-items-center">
+//                         <div class="d-block me-3">
+//                             <div class="avatar avatar-status status-online">
+//                                 <img src="assets/media/avatars/01.jpg" class="img-fluid rounded-circle w-auto" alt="">
+//                             </div>
+//                         </div>
+//                         <div class="flex-grow-1 flex-wrap pe-3">
+//                             <span class="mb-0 d-block"><strong>Korisnik ${notification.user.username}</strong> - ${notification.message}</span>
+//                             <small class="text-body-secondary">${notification.created_at}</small>
+//                         </div>
+//                     </a>
+//                 `);
+//                 listItem.data('id', notification.id); // Sačuvaj ID notifikacije
+
+//                 if (!notification.is_read) {
+//                     hasUnread = true;
+//                 }
+
+//                 listItem.on('click', function() {
+//                     markAsRead(notification.id); // Pozovi funkciju za označavanje kao pročitano
+//                 });
+
+//                 notificationList.append(listItem);
+//             });
+
+//             // Prikaži ili sakrij crvenu tačku
+//             if (hasUnread) {
+//                 notificationIndicator.show();
+//             } else {
+//                 notificationIndicator.hide();
+//             }
+//         },
+//         error: function(jqXHR, textStatus, errorThrown) {
+//             console.error('Greška:', textStatus, errorThrown);
+//         }
+//     });
+
+//    
+//     function markAsRead(notificationId) {
+//         $.ajax({
+//             url: markAsReadUrl(notificationId), // Koristi generisani URL
+//             method: 'POST',
+//             data: {
+//                 _token: $('meta[name="csrf-token"]').attr('content'), // Dodaj CSRF token
+//             },
+//             success: function(data) {
+//                 if (data.success) {
+//                     console.log("Notifikacija označena kao pročitana.");
+//                     // Možeš da ukloniš ili označiš notifikaciju kao pročitanu
+//                     const listItem = $(`a[data-id="${notificationId}"]`);
+//                     if (listItem.length) {
+//                         listItem.css('text-decoration', 'line-through'); // Označi kao pročitano
+//                     }
+
+//                     // Ponovno učitavanje notifikacija da bi se ažurirala tačka
+//                     $.ajax({
+//                         url: notificationsIndexUrl,
+//                         method: 'GET',
+//                         dataType: 'json',
+//                         success: function(data) {
+//                             const notificationList = $('#notificationList');
+//                             const notificationIndicator = $('#notificationIndicator');
+//                             notificationList.empty(); // Očisti prethodne notifikacije
+
+//                             let hasUnread = false;
+
+//                             // Dodaj svaku notifikaciju u listu
+//                             data.forEach(notification => {
+//                                 const listItem = $(`
+//                                     <a href="#" class="list-group-item list-group-item-action py-3 px-4 d-flex align-items-center">
+//                                         <div class="d-block me-3">
+//                                             <div class="avatar avatar-status status-online">
+//                                                 <img src="assets/media/avatars/01.jpg" class="img-fluid rounded-circle w-auto" alt="">
+//                                             </div>
+//                                         </div>
+//                                         <div class="flex-grow-1 flex-wrap pe-3">
+//                                             <span class="mb-0 d-block"><strong>Korisnik ${notification.user.username}</strong> - ${notification.message}</span>
+//                                             <small class="text-body-secondary">${notification.created_at}</small>
+//                                         </div>
+//                                     </a>
+//                                 `);
+//                                 listItem.data('id', notification.id); // Sačuvaj ID notifikacije
+
+//                                 if (!notification.is_read) {
+//                                     hasUnread = true;
+//                                 }
+
+//                                 listItem.on('click', function() {
+//                                     markAsRead(notification.id); // Pozovi funkciju za označavanje kao pročitano
+//                                 });
+
+//                                 notificationList.append(listItem);
+//                             });
+
+//                             // Prikaži ili sakrij crvenu tačku
+//                             if (hasUnread) {
+//                                 notificationIndicator.show();
+//                             } else {
+//                                 notificationIndicator.hide();
+//                             }
+//                         },
+//                         error: function(jqXHR, textStatus, errorThrown) {
+//                             console.error('Greška:', textStatus, errorThrown);
+//                         }
+//                     });
+//                 }
+//             },
+//             error: function(jqXHR, textStatus, errorThrown) {
+//                 console.error('Greška:', textStatus, errorThrown);
+//             }
+//         });
+//     }
+// });
