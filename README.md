@@ -10,7 +10,8 @@
 ## About This Project
 
 
-Technology: PHP, Laravel, Breeze, Bootstrap 5, Javascript packages
+Technology: PHP, Laravel, Breeze, Bootstrap 5, Javascript packages.
+
 Features:
 
 - Products: Allows creating, updating, deleting, and displaying products (CRUD).
