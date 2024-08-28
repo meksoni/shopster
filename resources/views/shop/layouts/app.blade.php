@@ -4,7 +4,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>AlfaSoft Shop | Kuća dobrog softvera | alfasoft.rs</title>
+    <title>Shopster | neodigital.pro | Web Solutions</title>
     <link rel="icon" type="image/x-icon" href="{{ asset('storage/logo/alfasoft-black.png') }}">
     @vite(['resources/shop/scss/shop.scss', 'resources/shop/js/shop.js'])
     <link rel="stylesheet" href="{{ asset('storage/boxicons/css/boxicons.min.css')}}">
