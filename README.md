@@ -10,7 +10,7 @@
 ## About This Project
 
 
-Technology: PHP, Laravel, Breeze, Bootstrap 5, Javascript packages.
+Technology: PHP, Laravel, Blade, Bootstrap 5, Javascript packages.
 
 Features:
 
