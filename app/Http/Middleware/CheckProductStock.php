@@ -6,7 +6,6 @@ use App\Models\Notifications;
 use App\Models\Product;
 use Closure;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Route;
 use Symfony\Component\HttpFoundation\Response;
@@ -31,10 +30,8 @@ class CheckProductStock
 
                     
     
-                    $userId = Auth::id();
                     // Kreirajte novu notifikaciju
                     Notifications::create([
-                        'user_id' => $userId,
                         'message' => 'Proizvod <span class="fw-medium">' . $product->title . '</span> ima manje od 3 komada na stanju.',
                         'url' => $url,
                         'is_read' => false,
