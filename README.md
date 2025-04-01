@@ -30,20 +30,6 @@ Features:
 And I plan to put a lot more into this project.
 Stay tuned :grinning:
 
-## Where u can find a Demo for this Project
-
-**[Shopster](https://shopster.neodigital.pro)**.
-
-**[Shopster Dashboard](https://shopster.neodigital.pro/admin)**.
-
-SuperAdmin:
-- Email: superadmin@demo.com
-- Password: shopster
-
-Admin:
-- Email: admin@demo.com
-- Password: shopster
-
 ## Where this project is used
 
 This project was used for a company I worked for, they asked me to create a web store for their business.
